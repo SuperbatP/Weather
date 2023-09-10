@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/css/weather.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <select id="city" onchange="f_change()">
+          <option name="city"></option>
+          <option name="city" value="서울특별시">서울특별시</option>
+          <option name="city" value="부산광역시">부산광역시</option>
+          <option name="city" value="대구광역시">대구광역시</option>
+          <option name="city" value="인천광역시">인천광역시</option>
+          <option name="city" value="광주광역시">광주광역시</option>
+          <option name="city" value="대전광역시">대전광역시</option>
+          <option name="city" value="울산광역시">울산광역시</option>
+          <option name="city" value="세종특별자치시">세종특별자치시</option>
+          <option name="city" value="경기도">경기도</option>
+          <option name="city" value="충청북도">충청북도</option>
+          <option name="city" value="충청남도">충청남도</option>
+          <option name="city" value="전라북도">전라북도</option>
+          <option name="city" value="전라남도">전라남도</option>
+          <option name="city" value="경상북도">경상북도</option>
+          <option name="city" value="경상남도">경상남도</option>
+          <option name="city" value="제주특별자치도">제주특별자치도</option>
+          <option name="city" value="강원특별자치도">강원특별자치도</option>
+        </select>
+        <input
+          type="text"
+          placeholder="시 또는 군을 넣어주세요."
+          spellcheck="false"
+        />
+        <button><img src="./resources/images/search.png" /></button>
+      </div>
+      <div class="error">
+        <p>지역을 확인해주세요.</p>
+      </div>
+      <div class="weather">
+        <img src="./resources/images/clear.png" class="weather-icon" />
+        <h1 class="temp"></h1>
+        <h2 class="city"></h2>
+        <div class="details">
+          <div class="col">
+            <img src="./resources/images/humidity.png" />
+            <div>
+              <p class="humidity"></p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="./resources/images/wind.png" />
+            <div>
+              <p class="wind"></p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 좌표값 가져오기 -->
+    <script src="./resources/js/weather.js"></script>
+  </body>
+</html>
