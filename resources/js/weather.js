@@ -47,7 +47,7 @@ v_ajax.send();
   var minutes;
   if (today.getMinutes() <= 30) {
     minutes = "00";
-    hours = (hours - 1);
+    hours = "0"+(hours - 1);
   } else {
     minutes = "30";
   }
